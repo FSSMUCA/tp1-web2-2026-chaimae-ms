@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 6</h1>
+
+    <script>
+      // Correction des erreurs de nommage :
+      // "1erPrix" commence par un chiffre → interdit en JavaScript
+      let premierPrix = 100;
+
+      // "deuxieme prix" contient un espace → interdit en JavaScript
+      let deuxiemePrix = 80;
+
+      // "prix-minimum" contient un tiret → interdit en JavaScript
+      let prixMinimum = 50;
+
+      // "var" est un mot réservé JavaScript → interdit comme nom de variable
+      let prixSpecial = 200;
+
+      // "PrixMaximum" ne respecte pas le camelCase → première lettre doit être minuscule
+      let prixMaximum = 300;
+
+      // Calcul de la moyenne des 5 prix
+      let prixMoyen = (premierPrix + deuxiemePrix + prixMinimum + prixSpecial + prixMaximum) / 5;
+
+      // Affichage des résultats dans la console
+      console.log("Prix moyen : " + prixMoyen);
+      console.log("Le prix minimum est : " + prixMinimum);
+      console.log("Le prix maximum est : " + prixMaximum);
+    </script>
+  </body>
+</html>
